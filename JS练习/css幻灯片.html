@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>css3 幻灯片</title>
+		<style type="text/css">
+			.ani {
+				text-align: center;
+				width: 480px;
+				height: 320px;
+				margin: 50px auto;
+				overflow: hidden;
+				box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+				background-size: cover;
+				background-position: center;
+				-webkit-animation-name: "loops";
+				-webkit-animation-duration: 20s;
+				-webkit-animation-iteration-count: infinite;
+			}
+			
+			@-webkit-keyframes "loops" {
+				0% {
+					background: url('img/2.jpg') no-repeat;
+				}
+				25% {
+					background: url('img/3.jpg') no-repeat;
+				}
+				50% {
+					background: url('img/4.jpg') no-repeat;
+				}
+				75% {
+					background: url('img/5.jpg') no-repeat;
+				}
+				100% {
+					background: url('img/1.png') no-repeat;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="ani" align="center">
+		</div>
+	</body>
+
+</html>
